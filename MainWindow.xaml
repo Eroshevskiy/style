@@ -1,0 +1,83 @@
+﻿<Window x:Class="Style.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Style"
+        mc:Ignorable="d"
+        Title="Style" Height="450" Width="800">
+    <Grid ShowGridLines="True" Background="#FF6F3C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="225"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Column="0">
+            <Button Margin="0,50,0,0" Name="Menu" Style="{StaticResource MenuButton}">
+                <StackPanel Orientation="Horizontal" >
+                    <Image Source="\Icons\free-icon-pillow-5583285.png"/>
+                    <TextBlock VerticalAlignment="Center" Margin="20,0,0,0">Детская продукция</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MenuButton}">
+                <StackPanel Orientation="Horizontal" >
+                    <Image Source="\Icons\free-icon-fabric-1589351.png"/>
+                    <TextBlock VerticalAlignment="Center" Margin="20,0,0,0">Мягкий инвентарь</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MenuButton}">
+                <StackPanel Orientation="Horizontal" >
+                    <Image Source="\Icons\free-icon-contacts-4475919.png"/>
+                    <TextBlock VerticalAlignment="Center" Margin="20,0,0,0">Контакты</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MenuButton}">
+                <StackPanel Orientation="Horizontal" >
+                    <Image Source="\Icons\free-icon-delivery-1584805.png"/>
+                    <TextBlock VerticalAlignment="Center" Margin="20,0,0,0">Доставка</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MenuButton}">
+                <StackPanel Orientation="Horizontal" >
+                    <Image Source="\Icons\free-icon-description-12423461.png"/>
+                    <TextBlock VerticalAlignment="Center" Margin="20,0,0,0">Описание компании</TextBlock>
+                </StackPanel>
+            </Button>
+            
+        </StackPanel>
+        <Button VerticalAlignment="Bottom"  Style="{StaticResource MenuButton}">
+            <StackPanel Orientation="Horizontal" >
+                <Image Source="/Icons/setting.png"/>
+                <TextBlock VerticalAlignment="Center" Margin="20,0,0,0">Настройки</TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Grid Grid.Column="1" Background="#155263">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="0" VerticalAlignment="Center" Margin="10,0,0,0">
+                <TextBlock FontSize="20">Вы хотите</TextBlock>
+                <TextBlock FontSize="20">сделать заказ?</TextBlock>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Width="60" Height="60" Style="{StaticResource WhiteButton}">
+                    <Image Width="25" Height="25" Source="\Icons\free-icon-yes-3572263.png"/>
+                </Button>
+                <Button Width="60" Height="60" Style="{StaticResource WhiteButton}">
+                    <Image Width="25" Height="25" Source="\Icons\free-icon-no-3572267.png"/>
+                </Button>
+                
+            </StackPanel>
+        </Grid>
+        
+    </Grid>
+</Window>
